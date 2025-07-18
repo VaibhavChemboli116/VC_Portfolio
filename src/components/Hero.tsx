@@ -90,20 +90,20 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-500/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 hero-text-container">
         <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 transform transition-all duration-1000 delay-300">
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 transform transition-all duration-1000 delay-300 text-render-fix">
+            <span className="gradient-text-bing-fix">
               Vaibhav Chemboli
             </span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-300 mb-6 font-light transform transition-all duration-1000 delay-500">
+          <h2 className="text-2xl md:text-3xl text-gray-300 mb-6 font-light transform transition-all duration-1000 delay-500 text-render-fix">
             {displayText}
             {currentIndex < subtitle.length && (
               <span className="animate-pulse text-white">_</span>
             )}
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed transform transition-all duration-1000 delay-700" style={{ fontSize: '22px' }}>
+          <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed transform transition-all duration-1000 delay-700 text-render-fix" style={{ fontSize: '22px' }}>
             {displayDescription}
             {isTypingComplete && descriptionIndex < description.length && (
               <span className="animate-pulse text-white">_</span>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Calendar } from 'lucide-react';
+import React from 'react';
+import { Mail, MapPin, Github, Linkedin, ExternalLink } from 'lucide-react';
 import Tile from './Tile';
 
 const ResearchGateIcon: React.FC<{ className?: string }> = ({ className = '' }) => (
@@ -9,32 +9,12 @@ const ResearchGateIcon: React.FC<{ className?: string }> = ({ className = '' }) 
 );
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <section id="contact" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="gradient-text-bing-fix">
               Get In Touch
             </span>
           </h2>
@@ -51,18 +31,40 @@ const Contact: React.FC = () => {
               },
               {
                 icon: <MapPin className="w-6 h-6 text-white" />, label: 'Location', value: 'Jersey City, New Jersey, 07307', gradient: 'from-purple-500 to-pink-500', hover: 'hover:border-purple-500/50'
+              },
+              {
+                icon: <ExternalLink className="w-6 h-6 text-white" />, 
+                label: 'Creative Portfolio', 
+                value: 'Want to see my other portfolio which is creative? Click on the icon.', 
+                gradient: 'from-yellow-500 to-orange-500', 
+                hover: 'hover:border-yellow-500/50',
+                link: 'https://vaibhavchemboli116.github.io/Windows8_Portfolio/'
               }
             ].map((item, idx) => (
               <Tile key={idx} className="mb-8">
-                <div className="flex items-center">
-                  <div className={`w-12 h-12 bg-gradient-to-r ${item.gradient} rounded-full flex items-center justify-center`}>
-                    {item.icon}
+                {item.link ? (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
+                    <div className="flex items-center">
+                      <div className={`w-12 h-12 min-w-[3rem] min-h-[3rem] bg-gradient-to-r ${item.gradient} rounded-full flex items-center justify-center flex-shrink-0`}>
+                        {item.icon}
+                      </div>
+                      <div className="ml-4 sm:ml-6 flex flex-col justify-center flex-1 min-w-0">
+                        <h4 className="text-white text-lg sm:text-xl font-bold">{item.label}</h4>
+                        <p className="text-gray-400 text-base sm:text-lg hover:text-white transition-colors duration-300 break-words">{item.value}</p>
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div className="flex items-center">
+                    <div className={`w-12 h-12 min-w-[3rem] min-h-[3rem] bg-gradient-to-r ${item.gradient} rounded-full flex items-center justify-center flex-shrink-0`}>
+                      {item.icon}
+                    </div>
+                    <div className="ml-4 sm:ml-6 flex flex-col justify-center flex-1 min-w-0">
+                      <h4 className="text-white text-lg sm:text-xl font-bold">{item.label}</h4>
+                      <p className="text-gray-400 text-base sm:text-lg break-words">{item.value}</p>
+                    </div>
                   </div>
-                  <div className="ml-6 flex flex-col justify-center">
-                    <h4 className="text-white text-xl font-bold">{item.label}</h4>
-                    <p className="text-gray-400 text-lg">{item.value}</p>
-                  </div>
-                </div>
+                )}
               </Tile>
             ))}
           </div>

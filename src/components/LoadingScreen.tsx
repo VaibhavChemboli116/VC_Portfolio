@@ -73,7 +73,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ isLoading }) => {
         {/* Training Status */}
         <div className="bg-gray-900/80 border border-gray-700 rounded-xl p-6 backdrop-blur-sm">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <h2 className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 bg-clip-text text-transparent">
+            <h2 className="text-xl font-bold gradient-text-bing-fix">
               Advanced tqdm Visualization
             </h2>
           </div>
