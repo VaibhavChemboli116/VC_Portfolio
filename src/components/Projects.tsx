@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
       stars: 1892,
       forks: 312,
       links: {
-        github: '#',
+        github: 'https://github.com/Venkatalakshmikottapalli/multi-agentic-conversation-ai-system',
         demo: '#',
         docs: '#'
       },
@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
       stars: 1567,
       forks: 234,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Dynamic_Ad_Recommender_Chatbot',
         demo: '#',
         docs: '#'
       },
@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
       stars: 1245,
       forks: 89,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/LoRA_TonyStark',
         demo: '#',
         docs: '#'
       },
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
       stars: 892,
       forks: 156,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Med_Diffusion',
         docs: '#'
       },
       status: 'Active',
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
       stars: 567,
       forks: 78,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/House_Price_Prediction',
         demo: '#',
         live: '#'
       },
@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
       stars: 334,
       forks: 45,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Canine_Cardiomegaly_Classification_And_VHS_Regression',
         demo: '#'
       },
       status: 'Maintenance',
@@ -107,7 +107,7 @@ const Projects: React.FC = () => {
       stars: 445,
       forks: 67,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Noise_Isolation_Bird_Sound_Images',
         demo: '#',
         whitepaper: '#'
       },
@@ -123,7 +123,7 @@ const Projects: React.FC = () => {
       stars: 289,
       forks: 32,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Retinal_Disease_Classification',
         demo: '#'
       },
       status: 'Active',
@@ -138,7 +138,7 @@ const Projects: React.FC = () => {
       stars: 234,
       forks: 28,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Custom_KMeans_Clustering',
         demo: '#'
       },
       status: 'Active',
@@ -153,7 +153,7 @@ const Projects: React.FC = () => {
       stars: 189,
       forks: 34,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Targeted_Marketing/tree/main',
         demo: '#'
       },
       status: 'Active',
@@ -168,7 +168,7 @@ const Projects: React.FC = () => {
       stars: 156,
       forks: 22,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Mental-Health-NHANES-Study',
         docs: '#'
       },
       status: 'Active',
@@ -183,7 +183,7 @@ const Projects: React.FC = () => {
       stars: 298,
       forks: 45,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Crop_Type_Prediction',
         demo: '#'
       },
       status: 'Active',
@@ -198,7 +198,7 @@ const Projects: React.FC = () => {
       stars: 167,
       forks: 31,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Times_Series_Air_Quality_Prediction',
         docs: '#'
       },
       status: 'Active',
@@ -213,7 +213,7 @@ const Projects: React.FC = () => {
       stars: 145,
       forks: 19,
       links: {
-        github: '#',
+        github: 'https://github.com/VaibhavChemboli116/Wireless_Sound_Control',
         demo: '#'
       },
       status: 'Complete',
@@ -249,7 +249,14 @@ const Projects: React.FC = () => {
 
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
-                    {project.title}
+                    <a 
+                      href={project.links.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-400 transition-colors duration-300 cursor-pointer"
+                    >
+                      {project.title}
+                    </a>
                   </h3>
                   <p className="text-gray-300 mb-4 leading-relaxed flex-grow text-sm text-justify">
                     {project.description}
