@@ -17,7 +17,7 @@ const Experience: React.FC = () => {
         'Improved the chatbot by using the OpenAI Assistant API and created a custom function that allows the user to ask data-driven queries. Built and implemented a comprehensive end-to-end solution with Flask as the frontend, resulting in a fully working, robust medical chatbot.',
         'Designed database and metadata management with SQLite; optimized retrieval pipelines for both models.',
         'Contributed to system architecture design, UI/UX planning for web/mobile apps, and conducted technical interviews for full-stack and AI roles.',
-        'Edited marketing videos and played a key role in developing the MVP across tech, design, and deployment stages.',
+        'Played a key role in developing the MVP across tech, design, and development stages.',
         'I got a chance to enhance my skills and keep a learning approach and explore other dimensions like marketing and talent acquisition where I was involved with a team of 5 members contributing to this startup which sums up my experience.'
       ],
       technologies: ['RAG', 'LangChain', 'LlamaIndex', 'Azure AI Studio', 'AI Agents', 'Assistant API OpenAI', 'Chat Completion API', 'Flask', 'Gradio', 'Pinecone', 'ChromaDB', 'HTML', 'CSS', 'JS']

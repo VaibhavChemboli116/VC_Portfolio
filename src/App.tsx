@@ -132,11 +132,11 @@ function App() {
               <div className="absolute bottom-20 right-0 w-72 sm:w-80 bg-gray-900 rounded-xl shadow-2xl p-6 flex flex-col items-start animate-fade-in-up">
                 <button onClick={handleCloseChat} className="absolute top-2 right-2 text-gray-400 hover:text-white"><X size={20} /></button>
                 <h4 className="text-lg font-bold mb-2 text-cyan-400">Shocking Rare Fact</h4>
-                <div className="text-white text-base min-h-[60px] flex items-center">
+                <div className="text-white text-base min-h-[60px] break-words overflow-hidden">
                   {isFactLoading ? (
                     <span className="animate-pulse text-gray-400">Loading...</span>
                   ) : (
-                    fact
+                    <p className="leading-relaxed">{fact}</p>
                   )}
                 </div>
                 <button onClick={handleShowAnotherFact} className="mt-4 px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg text-white font-semibold hover:from-cyan-600 hover:to-purple-700 transition-all">Show Another Fact</button>

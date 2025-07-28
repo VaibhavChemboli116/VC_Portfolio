@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Brain, Zap, Activity } from 'lucide-react';
+import { Brain, Zap } from 'lucide-react';
 
 interface LoadingScreenProps {
   isLoading: boolean;

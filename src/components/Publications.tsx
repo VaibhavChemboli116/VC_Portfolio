@@ -49,51 +49,6 @@ const Publications: React.FC = () => {
         paper: 'https://ieeexplore.ieee.org/document/10134132'
       },
       awards: []
-    },
-    {
-      title: 'Privacy-Preserving Federated Learning with Homomorphic Encryption',
-      authors: ['John Doe', 'Emma Thompson', 'David Lee'],
-      venue: 'ACM Conference on Computer and Communications Security (CCS)',
-      year: '2022',
-      type: 'Conference Paper',
-      status: 'Published',
-      abstract: 'We propose a novel federated learning framework that uses homomorphic encryption to ensure privacy while maintaining model utility. Our approach reduces communication overhead by 40%.',
-      citations: 67,
-      links: {
-        paper: '#',
-        code: '#'
-      },
-      awards: []
-    },
-    {
-      title: 'Efficient Graph Neural Networks for Large-Scale Social Networks',
-      authors: ['John Doe', 'Chris Anderson'],
-      venue: 'International Conference on Machine Learning (ICML)',
-      year: '2021',
-      type: 'Conference Paper',
-      status: 'Published',
-      abstract: 'We introduce a scalable graph neural network architecture specifically designed for large-scale social network analysis, achieving state-of-the-art performance on node classification tasks.',
-      citations: 156,
-      links: {
-        paper: '#',
-        code: '#',
-        poster: '#'
-      },
-      awards: ['Best Student Paper Award']
-    },
-    {
-      title: 'Multi-Modal Learning for Autonomous Driving Systems',
-      authors: ['John Doe', 'Lisa Garcia', 'Tom Wilson'],
-      venue: 'Robotics: Science and Systems (RSS)',
-      year: '2024',
-      type: 'Conference Paper',
-      status: 'Under Review',
-      abstract: 'We present a multi-modal learning framework that combines visual, LiDAR, and sensor data for improved autonomous driving performance in challenging weather conditions.',
-      citations: 0,
-      links: {
-        preprint: '#'
-      },
-      awards: []
     }
   ];
 

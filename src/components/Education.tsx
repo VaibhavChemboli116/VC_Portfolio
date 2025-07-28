@@ -16,21 +16,9 @@ const Education: React.FC = () => {
       degree: 'Bachelor\'s in Computer Science & Engineering',
       institution: 'GITAM University',
       period: '2019 - 2023',
-      gpa: '3.57/4.0',
+      gpa: '3.58/4.0',
       description: '',
       achievements: []
-    },
-    {
-      degree: 'B.S. in Computer Engineering',
-      institution: 'UC Berkeley',
-      period: '2012 - 2016',
-      gpa: '3.7/4.0',
-      description: 'Strong foundation in computer systems, algorithms, and software development. Senior project on IoT security protocols.',
-      achievements: [
-        'Magna Cum Laude',
-        'ACM Student Chapter President',
-        'Hackathon Winner - Cal Hacks 2015'
-      ]
     }
   ];
 
