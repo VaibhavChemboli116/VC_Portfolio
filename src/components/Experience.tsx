@@ -9,7 +9,7 @@ const Experience: React.FC = () => {
       company: 'KReative Integrations LLC',
       companyUrl: 'https://www.kreativeintegrations.com/',
       location: 'Remote, Internship',
-      period: 'Jun 2024 - Dec 2024',
+      period: 'Jul 2024 - Dec 2024',
       type: 'Internship',
       description: 'Built two RAG-based medical chatbots: one using OpenAI Assistant API and another with LLaMA2-7B, Pinecone, and Gale Encyclopedia for domain-specific reasoning.',
       achievements: [
@@ -27,7 +27,7 @@ const Experience: React.FC = () => {
       company: 'Yeshiva University',
       companyUrl: 'https://www.yu.edu/katz',
       location: 'Lexington Av, Manhattan, NYC, NY',
-      period: 'Jan 2025 - May 2025',
+      period: 'Feb 2025 - May 2025',
       type: 'Part-Time',
       description: 'Teaching assistant for the Neural Networks & Deep Learning course.',
       achievements: [
@@ -57,7 +57,7 @@ const Experience: React.FC = () => {
       company: '1stop-ai',
       companyUrl: 'https://www.1stop.ai/',
       location: 'Remote',
-      period: 'May 2022 - Aug 2022',
+      period: 'Aug 2022 - Sep 2022',
       type: 'Internship',
       //description: 'Developed Hate Speech Detection model using Kaggle\'s \'Dynamically Generated Hate Speech Dataset\' which has 40k data points, utilizing 80% of the data for training.',
       achievements: [
