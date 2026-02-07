@@ -5,22 +5,19 @@ import Tile from './Tile';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'AI/ML Intern',
-      company: 'KReative Integrations LLC',
-      companyUrl: 'https://www.kreativeintegrations.com/',
-      location: 'Remote, Internship',
-      period: 'Jul 2024 - Dec 2024',
+      title: 'Generative AI Engineer',
+      company: 'Stealth Startup',
+      companyUrl: '',
+      location: 'Remote',
+      period: 'May 2025 - Oct 2025',
       type: 'Internship',
-      description: 'Built two RAG-based medical chatbots: one using OpenAI Assistant API and another with LLaMA2-7B, Pinecone, and Gale Encyclopedia for domain-specific reasoning.',
+      description: 'Built agentic AI systems for automated ad delivery and campaign orchestration.',
       achievements: [
-        'Created an medical chatbot utilizing the RAG framework and the LLaMA2 model for natural language processing. The LLaMA Index was used for efficient query retrieval, while Pinecone was used for vector storage and retrieval. I used the Gale series of medical books as the knowledge base and deployed the chatbot using Gradio.',
-        'Improved the chatbot by using the OpenAI Assistant API and created a custom function that allows the user to ask data-driven queries. Built and implemented a comprehensive end-to-end solution with Flask as the frontend, resulting in a fully working, robust medical chatbot.',
-        'Designed database and metadata management with SQLite; optimized retrieval pipelines for both models.',
-        'Contributed to system architecture design, UI/UX planning for web/mobile apps, and conducted technical interviews for full-stack and AI roles.',
-        'Played a key role in developing the MVP across tech, design, and development stages.',
-        'I got a chance to enhance my skills and keep a learning approach and explore other dimensions like marketing and talent acquisition where I was involved with a team of 5 members contributing to this startup which sums up my experience.'
+        'Architected a high throughput ad delivery pipeline using FastAPI, Redis, and WebSockets/SSE for asynchronous operations, integrating LangGraph agents and Qdrant for persistent context management across distributed sessions.',
+        'Engineered an extensible agentic architecture using gRPC-based Google Ads APIs and custom MCP tools, implementing OAuth-secure LangGraph state machines to automate complex ad campaign orchestration pipeline.',
+        'Developed a robust API suite with over 20 endpoints for generative ad copy and creative optimization, reducing manual configuration time by 70% via pre-launch auditing and automated ROI enhancement.'
       ],
-      technologies: ['RAG', 'LangChain', 'LlamaIndex', 'Azure AI Studio', 'AI Agents', 'Assistant API OpenAI', 'Chat Completion API', 'Flask', 'Gradio', 'Pinecone', 'ChromaDB', 'HTML', 'CSS', 'JS']
+      technologies: ['LangGraph', 'Model Context Protocol (MCP)', 'FastAPI', 'Qdrant', 'CI/CD', 'WebSockets', 'SSE', 'Agentic AI']
     },
     {
       title: 'Graduate Teaching Assistant',
@@ -38,12 +35,30 @@ const Experience: React.FC = () => {
       technologies: ['Neural Networks', 'Deep Learning', 'Python', 'PyTorch']
     },
     {
+      title: 'AI/ML Intern',
+      company: 'KReative Integrations LLC',
+      companyUrl: 'https://www.kreativeintegrations.com/',
+      location: 'Remote',
+      period: 'Jul 2024 - Dec 2024',
+      type: 'Internship',
+      //description: 'Built two RAG-based medical chatbots: one using OpenAI Assistant API and another with LLaMA2-7B, Pinecone, and Gale Encyclopedia for domain-specific reasoning.',
+      achievements: [
+        'Created an medical chatbot utilizing the RAG framework and the LLaMA2 model for natural language processing. The LLaMA Index was used for efficient query retrieval, while Pinecone was used for vector storage and retrieval. I used the Gale series of medical books as the knowledge base and deployed the chatbot using Gradio.',
+        'Improved the chatbot by using the OpenAI Assistant API and created a custom function that allows the user to ask data-driven queries. Built and implemented a comprehensive end-to-end solution with Flask as the frontend, resulting in a fully working, robust medical chatbot.',
+        'Designed database and metadata management with SQLite; optimized retrieval pipelines for both models.',
+        'Contributed to system architecture design, UI/UX planning for web/mobile apps, and conducted technical interviews for full-stack and AI roles.',
+        'Played a key role in developing the MVP across tech, design, and development stages.',
+        'I got a chance to enhance my skills and keep a learning approach and explore other dimensions like marketing and talent acquisition where I was involved with a team of 5 members contributing to this startup which sums up my experience.'
+      ],
+      technologies: ['RAG', 'LangChain', 'LlamaIndex', 'Azure AI Studio', 'AI Agents', 'Assistant API OpenAI', 'Chat Completion API', 'Flask', 'Gradio', 'Pinecone', 'ChromaDB', 'HTML', 'CSS', 'JS']
+    },
+    {
       title: 'Peer Reviewer',
       company: 'Springer Nature in India',
       companyUrl: 'https://group.springernature.com/gp/group',
       location: 'Remote',
-      period: 'May 2023 - July 2023',
-      type: 'Volunteer',
+      period: 'May 2023 - Jul 2023',
+      type: 'Part-Time',
       //description: 'Reviewed and provided constructive feedback on research papers for 3rd International Conference on Machine Learning and Big Data Analytics (ICMLBDA2023) conference hosted by National Institute of Technology(NIT), Arunachal Pradesh, India.',
       achievements: [
         'Reviewed and provided constructive feedback on research papers for 3rd International Conference on Machine Learning and Big Data Analytics (ICMLBDA2023) conference hosted by National Institute of Technology(NIT), Arunachal Pradesh.',
@@ -53,11 +68,56 @@ const Experience: React.FC = () => {
       technologies: []
     },
     {
+      title: 'Student Researcher',
+      company: 'GITAM University',
+      companyUrl: 'https://www.gitam.edu/',
+      location: 'Visakhapatnam, Andhra Pradesh, India',
+      period: 'Jun 2022 - Jun 2023',
+      type: 'Part-time',
+      description: 'Conducted research across recommendation systems, generative models, and medical imaging.',
+      achievements: [
+        <span>
+          Session-Based News Recommendation System - ICMLBDA2023 - Springer Conference -{' '}
+          <a
+            href="https://link.springer.com/chapter/10.1007/978-3-031-51338-1_28"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-400 underline underline-offset-4 hover:text-cyan-300 transition-colors duration-300"
+          >
+            View publication
+          </a>
+        </span>,
+        <span>
+          Conditional DCGAN for Targeted Generation of MNIST Handwritten Digits - Best Student Paper - ICDSAI 2023 - Springer Conference -{' '}
+          <a
+            href="https://link.springer.com/chapter/10.1007/978-3-031-51167-7_23"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-400 underline underline-offset-4 hover:text-cyan-300 transition-colors duration-300"
+          >
+            View publication
+          </a>
+        </span>,
+        <span>
+          Comparative Performance Analysis of Deep Learning Models for Lung Disease Prediction using Chest X-Ray Images - ICICT2023 - IEEE Conference -{' '}
+          <a
+            href="https://ieeexplore.ieee.org/document/10134132"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-400 underline underline-offset-4 hover:text-cyan-300 transition-colors duration-300"
+          >
+            View publication
+          </a>
+        </span>
+      ],
+      technologies: ['TensorFlow', 'Python', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn', 'Flask', 'HTML', 'CSS', 'JavaScript']
+    },
+    {
       title: 'Machine Learning Intern',
       company: '1stop-ai',
       companyUrl: 'https://www.1stop.ai/',
       location: 'Remote',
-      period: 'Aug 2022 - Sep 2022',
+      period: 'Jun 2022 - Sep 2022',
       type: 'Internship',
       //description: 'Developed Hate Speech Detection model using Kaggle\'s \'Dynamically Generated Hate Speech Dataset\' which has 40k data points, utilizing 80% of the data for training.',
       achievements: [
@@ -140,10 +200,7 @@ const Experience: React.FC = () => {
                             <ExternalLink className="w-4 h-4" />
                           </a>
                         ) : (
-                          <>
-                            {exp.company}
-                            <ExternalLink className="w-4 h-4" />
-                          </>
+                          <span>{exp.company}</span>
                         )}
                       </p>
                       <div className="flex flex-wrap items-center gap-4 text-gray-400 mb-4">

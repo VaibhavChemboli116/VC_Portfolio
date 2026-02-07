@@ -8,7 +8,7 @@ const Education: React.FC = () => {
       degree: 'Master\'s in Artificial Intelligence',
       institution: 'Yeshiva University',
       period: '2024 - 2026',
-      gpa: '3.7/4.0',
+      gpa: '3.75/4.0',
       description: '',
       achievements: []
     },

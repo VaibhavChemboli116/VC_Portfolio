@@ -11,7 +11,7 @@ const Publications: React.FC = () => {
       year: '2023',
       type: 'Conference Paper',
       status: 'Published',
-      indexing: 'Springer Indexed',
+      indexing: 'Springer Conference',
       abstract: 'Developed a session-aware news recommendation system utilizing XLNet with causal language modeling and attention-based sequence processing. The system was trained and evaluated on the G1 news dataset, achieving a Recall at 20 of 0.34 and an NDCG at 20 of 0.16. The approach specifically modeled temporal dynamics and short-term user behavior to deliver highly relevant recommendations in real time.',
       citations: 0,
       links: {
@@ -26,7 +26,7 @@ const Publications: React.FC = () => {
       year: '2023',
       type: 'Conference Paper',
       status: 'Published',
-      indexing: 'Springer Indexed',
+      indexing: 'Springer Conference',
       abstract: 'Constructed a cDCGAN model to generate high-quality handwritten digit images conditioned on specific labels using the MNIST dataset. Conducted extensive hyperparameter tuning (e.g., epochs, batch size, optimizers, activation functions) and achieved a discriminator accuracy of 94%, outperforming several other GAN models.',
       citations: 0,
       links: {
@@ -42,7 +42,7 @@ const Publications: React.FC = () => {
       year: '2023',
       type: 'Conference Paper',
       status: 'Published',
-      indexing: 'IEEE Indexed',
+      indexing: 'IEEE Conference',
       abstract: 'Created a custom CNN-BiLSTM model to classify chest X-ray images into four categories: COVID-19, Pneumonia, Tuberculosis, and Normal. Outperformed several pre-trained models including EfficientNetB7 and VGG16, achieving 97% accuracy with high precision and recall across all classes. Integrated Grad-CAM for model explainability and clinical validation.',
       citations: 0,
       links: {

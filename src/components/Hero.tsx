@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   const subtitle = "AI Engineer";
-  const description = "Passionate about creating innovative AI solutions at the intersection of technology and research. Specializing in machine learning, deep learning, AI system optimization and context engineering.";
+  const description = "Passionate about creating innovative AI solutions at the intersection of technology and research. Specializing in machine learning, deep learning, 2D computer vision, tranfer learning, gaussian modelling, AI system optimization and agentic AI.";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -130,7 +130,7 @@ const Hero: React.FC = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 transform transition-all duration-1000 delay-1100">
           <button
-            onClick={() => scrollToSection('projects')}
+            onClick={() => scrollToSection('experience')}
             className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-purple-700 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25"
           >
             View My Work
